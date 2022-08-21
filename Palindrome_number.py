@@ -1,18 +1,18 @@
 class Solution(object):
     def isPalindrome(self, x):
-        start = str(x)
-        string = ""
-        for letter in start:
-            string += letter
-        print(string)
-
-
-
-
+        # Sets the integer to a string
+        start = list(str(x))
+        # Turns it backwards
+        done = list(reversed(start))
+        # Check
+        if start == done:
+            return True
+        else:
+            return False
         """
         :type x: int
         :rtype: bool
         """
 # Test
 test = Solution()
-test.isPalindrome(123)
+test.isPalindrome(12121)
