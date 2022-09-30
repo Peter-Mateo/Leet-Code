@@ -7,6 +7,8 @@ class Solution(object):
                 check = nums[i] + nums[a]
                 if check == target:
                     return (i, a)
+
+
         """
         :type nums: List[int]
         :type target: int
