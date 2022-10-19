@@ -10,9 +10,7 @@ public class Solution {
                 int toReturn[] = {hash.get(diff) + 1, i - 1};
                 return toReturn;
             }
-
             hash.put(numbers[i], i);
-
         }
         
         return null;
